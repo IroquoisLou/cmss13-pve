@@ -150,7 +150,7 @@
 	languages = list(LANGUAGE_ENGLISH, LANGUAGE_JAPANESE)
 	faction_group = list(FACTION_TWE)
 	faction = FACTION_TWE
-	skills = /datum/skills/rmc/rifleman
+	skills = /datum/skills/rmc
 
 /datum/equipment_preset/uscm/pfc/rmc/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
