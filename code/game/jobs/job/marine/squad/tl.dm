@@ -51,6 +51,17 @@
 	title = JOB_SQUAD_TEAM_LEADER_FORECON
 	gear_preset = /datum/equipment_preset/uscm/tl/forecon
 
+/datum/job/marine/tl/ai/rmc
+	total_positions = 1
+	spawn_positions = 1
+	title = JOB_SQUAD_TEAM_LEADER_RMC
+	gear_preset = /datum/equipment_preset/uscm/tl/forecon
+
+/obj/effect/landmark/start/marine/tl/rmc
+	name = JOB_SQUAD_TEAM_LEADER_RMC
+	squad = SQUAD_UPP
+	job = /datum/job/marine/tl/ai/rmc
+
 /obj/effect/landmark/start/marine/tl/upp
 	name = JOB_SQUAD_TEAM_LEADER_UPP
 	squad = SQUAD_UPP

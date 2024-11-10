@@ -16,6 +16,7 @@
 #define SQUAD_SOLAR "Solar Devils"
 #define SQUAD_UPP "Red Dawn"
 #define SQUAD_LRRP "Snake Eaters"
+#define SQUAD_RMC "Dam Busters"
 
 // Job name defines
 #define JOB_SQUAD_MARINE "Rifleman"
@@ -41,6 +42,12 @@
 #define JOB_SQUAD_RTO "Radio Telephone Operator"
 #define JOB_SQUAD_MARINE_FORECON "FORECON Rifleman"
 #define JOB_SQUAD_SMARTGUN_FORECON "FORECON Smartgunner"
+
+#define JOB_SQUAD_MARINE_RMC "RMC Rifleman"
+#define JOB_SQUAD_SMARTGUN_RMC "RMC Smartgunner"
+#define JOB_SQUAD_TEAM_LEADER_RMC "RMC Breacher"
+#define JOB_SQUAD_LEADER_RMC "RMC Team Leader"
+#define JOB_SO_RMC "RMC Lieutenant"
 
 GLOBAL_LIST_INIT(job_squad_roles, JOB_SQUAD_ROLES_LIST)
 

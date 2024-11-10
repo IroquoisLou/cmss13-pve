@@ -146,10 +146,16 @@ most of them are tied into map-placed objects. This should be reworked in the fu
 #define ACCESS_TWE_FLIGHT 295
 #define ACCESS_TWE_RESEARCH 296
 
+#define ACCESS_TWE_SQUAD_ONE 297
+#define ACCESS_TWE_SQUAD_TWO 298
+
 #define ACCESS_TWE_COMMANDO 299
 #define ACCESS_TWE_LEADERSHIP 300
 ///Senior leadership, the highest ranks
 #define ACCESS_TWE_SENIOR_LEAD 301
+
+#define ACCESS_TWE_GUNNER 302
+#define ACCESS_TWE_TLPREP 302
 
 //=================================================
 

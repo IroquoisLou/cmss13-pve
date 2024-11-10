@@ -706,6 +706,44 @@
 	if(!late_join)
 		add_verb(new_human.client, /client/proc/commander_rename_platoon)
 
+/datum/equipment_preset/uscm_ship/so/rmc
+	name = "RMC Platoon Commander (PltCo)"
+	idtype = /obj/item/card/id/dogtag
+	languages = list(LANGUAGE_ENGLISH, LANGUAGE_JAPANESE,)
+	paygrades = list(PAY_SHORT_RNO2 = JOB_PLAYTIME_TIER_0)
+	faction_group = list(FACTION_TWE)
+	faction = FACTION_TWE
+	access_list = ACCESS_TWE_SENIOR_LEAD
+
+/datum/equipment_preset/uscm_ship/so/rmc/lesser_rank
+	name = parent_type::name + " (Lesser Rank)"
+	paygrades = list(PAY_SHORT_RNO1 = JOB_PLAYTIME_TIER_0)
+
+/datum/equipment_preset/uscm_ship/so/upp/equipped
+	name = "RMC Platoon Commander (Equipped)"
+	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
+
+/datum/equipment_preset/uscm_ship/so/upp/equipped/load_status(mob/living/carbon/human/new_human)
+	new_human.nutrition = NUTRITION_NORMAL
+
+/datum/equipment_preset/uscm_ship/so/upp/equipped/load_gear(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/UPP/command(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/uppcap/beret/naval, WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/veteran/UPP(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch/upp, WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch/upp/naval, WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/upp_knife(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/type47/np92(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack/upp(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/medium(new_human), WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/medium(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range(new_human), WEAR_L_HAND)
+
+/datum/equipment_preset/uscm_ship/so/rmc/handle_late_join(mob/living/carbon/human/new_human, late_join)
+	if(!late_join)
+		add_verb(new_human.client, /client/proc/commander_rename_platoon)
+
+
 //*****************************************************************************************************/
 
 /datum/equipment_preset/uscm_ship/sea

@@ -98,7 +98,13 @@ GLOBAL_LIST_INIT(platoon_to_jobs, list(/datum/squad/marine/alpha = list(/datum/j
 		/datum/job/marine/medic/ai/forecon = JOB_SQUAD_MEDIC,\
 		/datum/job/marine/tl/ai/forecon = JOB_SQUAD_TEAM_LEADER,\
 		/datum/job/marine/smartgunner/ai/forecon = JOB_SQUAD_SMARTGUN)))
+		/datum/squad/marine/rmc = list(/datum/job/command/bridge/ai/rmc = JOB_SO,\
+		/datum/job/marine/leader/ai/rmc = JOB_SQUAD_LEADER,\
+		/datum/job/marine/standard/ai/rmc = JOB_SQUAD_MARINE,\
+		/datum/job/marine/tl/ai/rmc = JOB_SQUAD_TEAM_LEADER,\
+		/datum/job/marine/smartgunner/ai/rmc = JOB_SQUAD_SMARTGUN)))
 
 GLOBAL_LIST_INIT(platoon_to_role_list, list(/datum/squad/marine/alpha = ROLES_AI,\
 												/datum/squad/marine/upp = ROLES_AI_UPP,\
+												/datum/squad/marine/rmc = ROLES_AI_RMC,\
 												/datum/squad/marine/forecon = ROLES_AI_FORECON))

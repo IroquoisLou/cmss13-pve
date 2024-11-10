@@ -149,6 +149,17 @@
 
 	RegisterSignal(SSdcs, COMSIG_GLOB_PLATOON_NAME_CHANGE, PROC_REF(rename_platoon))
 
+/datum/squad/marine/rmc
+	name = SQUAD_RMC
+	chat_color = "#471414"
+	minimap_color = MINIMAP_SQUAD_RMC
+	use_stripe_overlay = FALSE
+	usable = TRUE
+	squad_one_access = ACCESS_TWE_SQUAD_ONE
+	squad_two_access = ACCESS_TWE_SQUAD_TWO
+	faction = FACTION_TWE
+
+
 /datum/squad/marine/forecon
 	name = SQUAD_LRRP
 	access = list(ACCESS_MARINE_ALPHA)
