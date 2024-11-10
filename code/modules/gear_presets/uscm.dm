@@ -213,7 +213,7 @@
 	name = "RMC Squad Smartgunner"
 	access = list(ACCESS_TWE_GENERAL, ACCESS_TWE_GUNNER)
 	assignment = "Smartgunner"
-	paygrades = list(PAY_SHORT_RMC4 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_RMC3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "MG"
 	languages = list(LANGUAGE_ENGLISH, LANGUAGE_JAPANESE)
 	faction_group = list(FACTION_TWE)
@@ -222,7 +222,7 @@
 
 /datum/equipment_preset/uscm/sg/rmc/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_RMC3 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_RMC2 = JOB_PLAYTIME_TIER_0)
 
 
 //*****************************************************************************************************/
@@ -490,7 +490,7 @@
 
 /datum/equipment_preset/uscm/tl/rmc
 	name = "RMC Squad Sergeant"
-	paygrades = list(PAY_SHORT_RMC5 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_RMC4 = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_TWE_GENERAL, ACCESS_TWE_TLPREP)
 	languages = list(LANGUAGE_ENGLISH, LANGUAGE_JAPANESE)
 	faction_group = list(FACTION_TWE)
@@ -583,14 +583,14 @@
 /datum/equipment_preset/uscm/leader/rmc
 	name = "RMC Platoon Sergeant"
 	access = list(ACCESS_UPP_GENERAL, ACCESS_UPP_LEADERSHIP, ACCESS_UPP_FLIGHT)
-	paygrades = list(PAY_SHORT_RMC7 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_RNOW = JOB_PLAYTIME_TIER_0)
 	languages = list(LANGUAGE_JAPANESE, LANGUAGE_ENGLISH,)
 	faction_group = list(FACTION_TWE)
 	faction = FACTION_TWE
 
 /datum/equipment_preset/uscm/leader/rmc/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_RMC6 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_RMC4 = JOB_PLAYTIME_TIER_0)
 
 
 //*****************************************************************************************************/
