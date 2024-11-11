@@ -67,8 +67,8 @@ OverrideTimelock(/datum/job/marine/leader, list(
 
 /datum/job/marine/leader/ai/rmc
 	title = JOB_SQUAD_LEADER_RMC
-	gear_preset = /datum/equipment_preset/uscm/leader/forecon
-	gear_preset_secondary = /datum/equipment_preset/uscm/leader/forecon/lesser_rank
+	gear_preset = /datum/equipment_preset/uscm/leader/rmc
+	gear_preset_secondary = /datum/equipment_preset/uscm/leader/rmc/lesser_rank
 
 /obj/effect/landmark/start/marine/leader/upp
 	name = JOB_SQUAD_LEADER_UPP

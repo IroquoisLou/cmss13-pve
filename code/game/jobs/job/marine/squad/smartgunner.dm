@@ -88,8 +88,8 @@
 	title = JOB_SQUAD_SMARTGUN_RMC
 	total_positions = 1
 	spawn_positions = 1
-	gear_preset = /datum/equipment_preset/uscm/sg/forecon
-	gear_preset_secondary = /datum/equipment_preset/uscm/sg/forecon/lesser_rank
+	gear_preset = /datum/equipment_preset/uscm/sg/rmc
+	gear_preset_secondary = /datum/equipment_preset/uscm/sg/rmc/lesser_rank
 
 /obj/effect/landmark/start/marine/smartgunner/upp
 	name = JOB_SQUAD_SMARTGUN_UPP

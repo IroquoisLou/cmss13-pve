@@ -81,8 +81,8 @@
 	title = JOB_SQUAD_MARINE_RMC
 	total_positions = 2
 	spawn_positions = 2
-	gear_preset = /datum/equipment_preset/uscm/pfc/forecon
-	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/forecon/lesser_rank
+	gear_preset = /datum/equipment_preset/uscm/pfc/rmc
+	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/rmc/lesser_rank
 
 
 /obj/effect/landmark/start/marine/upp

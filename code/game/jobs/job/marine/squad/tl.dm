@@ -55,7 +55,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	title = JOB_SQUAD_TEAM_LEADER_RMC
-	gear_preset = /datum/equipment_preset/uscm/tl/forecon
+	gear_preset = /datum/equipment_preset/uscm/tl/rmc
 
 /obj/effect/landmark/start/marine/tl/rmc
 	name = JOB_SQUAD_TEAM_LEADER_RMC
