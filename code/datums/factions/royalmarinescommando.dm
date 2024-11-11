@@ -11,7 +11,7 @@
 	else if(ID)
 		_role = ID.rank
 	switch(_role)
-		if(JOB_TWE_RMC_LIEUTENANT, JOB_SO)
+		if(JOB_TWE_RMC_LIEUTENANT,)
 			hud_icon_state = "lieutenant"
 		if(JOB_TWE_RMC_TEAMLEADER)
 			hud_icon_state = "teamleader"
