@@ -212,6 +212,10 @@ most of them are tied into map-placed objects. This should be reworked in the fu
 #define ACCESS_LIST_UPP_ALL "UPP (ALL)"
 #define ACCESS_LIST_UPP_PLATOON "UPP (Platoon)"
 
+///Access list for the TWE
+#define ACCESS_LIST_TWE_ALL
+#define ACCESS_LIST_TWE_PLATOON
+
 ///Generic/basic access to CLF stuff
 #define ACCESS_LIST_CLF_BASE "CLF (Basic)"
 ///All access levels associated with CLF

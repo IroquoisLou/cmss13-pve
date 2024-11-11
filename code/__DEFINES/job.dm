@@ -47,7 +47,6 @@
 #define JOB_SQUAD_SMARTGUN_RMC "RMC Smartgunner"
 #define JOB_SQUAD_TEAM_LEADER_RMC "RMC Breacher"
 #define JOB_SQUAD_LEADER_RMC "RMC Team Leader"
-#define JOB_SO_RMC "RMC Lieutenant"
 
 GLOBAL_LIST_INIT(job_squad_roles, JOB_SQUAD_ROLES_LIST)
 
