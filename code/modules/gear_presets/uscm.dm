@@ -582,9 +582,9 @@
 
 /datum/equipment_preset/uscm/leader/rmc
 	name = "RMC Platoon Sergeant"
-	access = list(ACCESS_UPP_GENERAL, ACCESS_UPP_LEADERSHIP, ACCESS_UPP_FLIGHT)
+	access = list(ACCESS_TWE_GENERAL, ACCESS_TWE_LEADERSHIP, ACCESS_TWE_FLIGHT)
 	paygrades = list(PAY_SHORT_RNOW = JOB_PLAYTIME_TIER_0)
-	languages = list(LANGUAGE_JAPANESE, LANGUAGE_ENGLISH,)
+	languages = list(LANGUAGE_ENGLISH, LANGUAGE_JAPANESE, )
 	faction_group = list(FACTION_TWE)
 	faction = FACTION_TWE
 

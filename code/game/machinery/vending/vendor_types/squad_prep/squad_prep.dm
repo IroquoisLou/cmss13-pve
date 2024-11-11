@@ -258,6 +258,81 @@
 		list("Bedroll", round(scale * 20), /obj/item/roller/bedroll, VENDOR_ITEM_REGULAR),
 		)
 
+
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/rmc
+	name = "\improper UnTech Surplus Uniform Vendor"
+	desc = "An automated supply rack hooked up to a small storage of standard RMC uniforms."
+	icon_state = "guns"
+	req_access = list(ACCESS_TWE_GENERAL)
+	req_one_access = list()
+	listed_products = list()
+	hackable = TRUE
+	vendor_theme = VENDOR_THEME_COMPANY
+
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/rmc/populate_product_list(scale)
+	listed_products = list(
+		list("STANDARD EQUIPMENT", -1, null, null, null),
+		list("Military Combat Boots", round(scale * 15), /obj/item/clothing/shoes/marine/rmc, VENDOR_ITEM_REGULAR),
+		list("RMC Battle Dress Uniform", round(scale * 15), /obj/item/clothing/under/marine/veteran/royal_marine, VENDOR_ITEM_REGULAR),
+		list("Combat Gloves", round(scale * 15), /obj/item/clothing/gloves/marine, VENDOR_ITEM_REGULAR),
+		list("L5A2 ballistic helmet", round(scale * 15), /obj/item/clothing/head/helmet/marine/veteran/royal_marine, VENDOR_ITEM_REGULAR),
+		list("L5A3 ballistic helmet", round(scale * 15), /obj/item/clothing/head/helmet/marine/veteran/royal_marine/breacher, VENDOR_ITEM_REGULAR),
+		list("Radio Headset", round(scale * 15), /obj/item/device/radio/headset/distress/royal_marine, VENDOR_ITEM_REGULAR),
+
+		list("WEBBINGS", -1, null, null),
+		list("Brown Webbing Vest", round(scale * 2), /obj/item/clothing/accessory/storage/black_vest/brown_vest, VENDOR_ITEM_REGULAR),
+		list("Webbing", round(scale * 2), /obj/item/clothing/accessory/storage/webbing, VENDOR_ITEM_REGULAR),
+		list("Drop Pouch", round(max(1,(scale * 2))), /obj/item/clothing/accessory/storage/droppouch, VENDOR_ITEM_REGULAR),
+		list("Shoulder Holster", round(max(1,(scale * 0.5))), /obj/item/clothing/accessory/storage/holster, VENDOR_ITEM_REGULAR),
+
+		list("ARMOR", -1, null, null),
+		list("kestrel armoured carry vest", round(scale * 15), /obj/item/clothing/suit/storage/marine/veteran/royal_marine/light/team_leader, VENDOR_ITEM_REGULAR),
+		list("kestrel pointman armour", round(scale * 15), /obj/item/clothing/suit/storage/marine/veteran/royal_marine/pointman, VENDOR_ITEM_REGULAR),
+		list("kestrel armoured vest", round(scale * 10), /obj/item/clothing/suit/storage/marine/veteran/royal_marine/light, VENDOR_ITEM_REGULAR),
+
+		list("BACKPACK", -1, null, null, null),
+		list("RMC Satchel", round(scale * 15), /obj/item/storage/backpack/rmc/light, VENDOR_ITEM_REGULAR),
+
+		list("RESTRICTED BACKPACKS", -1, null, null),
+		list("FBS-B Ballistic shield", round(max(1,(scale * 0.5))), /obj/item/weapon/shield/riot/ballistic, VENDOR_ITEM_REGULAR),
+
+		list("BELTS", -1, null, null),
+		list("L70 pattern ammo load rig", round(scale * 15), /obj/item/storage/belt/marine/rmc, VENDOR_ITEM_REGULAR),
+		list("L75 pattern medical storage rig", round(scale * 10), /obj/item/storage/belt/medical/rmc, VENDOR_ITEM_REGULAR),
+		list("L905 gunbelt", round(scale * 15), /obj/item/storage/belt/gun/l905, VENDOR_ITEM_REGULAR),
+		list("M276 Pattern M82F Holster Rig", round(scale * 5), /obj/item/storage/belt/gun/flaregun, VENDOR_ITEM_REGULAR),
+
+		list("POUCHES", -1, null, null, null),
+		list("First-Aid Pouch (Splints, Gauze, Ointment)", round(scale * 15), /obj/item/storage/pouch/firstaid/full/alternate, VENDOR_ITEM_REGULAR),
+		list("First-Aid Pouch (Pill Packets)", round(scale * 15), /obj/item/storage/pouch/firstaid/full/pills, VENDOR_ITEM_REGULAR),
+		list("First-Aid Pouch (Injectors)", round(scale * 15), /obj/item/storage/pouch/firstaid/full, VENDOR_ITEM_REGULAR),
+		list("Flare Pouch (Full)", round(scale * 15), /obj/item/storage/pouch/flare/full, VENDOR_ITEM_REGULAR),
+		list("Magazine Pouch", round(scale * 15), /obj/item/storage/pouch/magazine, VENDOR_ITEM_REGULAR),
+		list("Shotgun Shell Pouch", round(scale * 15), /obj/item/storage/pouch/shotgun, VENDOR_ITEM_REGULAR),
+		list("Medium General Pouch", round(scale * 15), /obj/item/storage/pouch/general/medium, VENDOR_ITEM_REGULAR),
+		list("Pistol Magazine Pouch", round(scale * 15), /obj/item/storage/pouch/magazine/pistol, VENDOR_ITEM_REGULAR),
+		list("Pistol Pouch", round(scale * 15), /obj/item/storage/pouch/pistol/alt, VENDOR_ITEM_REGULAR),
+
+		list("RESTRICTED POUCHES", -1, null, null, null),
+		list("Construction Pouch", round(scale * 1.25), /obj/item/storage/pouch/construction, VENDOR_ITEM_REGULAR),
+		list("Explosive Pouch", round(scale * 1.25), /obj/item/storage/pouch/explosive, VENDOR_ITEM_REGULAR),
+		list("First Responder Pouch (Empty)", round(scale * 2.5), /obj/item/storage/pouch/first_responder, VENDOR_ITEM_REGULAR),
+		list("Large Pistol Magazine Pouch", round(scale * 2), /obj/item/storage/pouch/magazine/pistol/large, VENDOR_ITEM_REGULAR),
+		list("Tools Pouch", round(scale * 1.25), /obj/item/storage/pouch/tools, VENDOR_ITEM_REGULAR),
+		list("Sling Pouch", round(scale * 1.25), /obj/item/storage/pouch/sling, VENDOR_ITEM_REGULAR),
+
+		list("MASK", -1, null, null, null),
+		list("L7 gasmask", round(scale * 15), /obj/item/clothing/mask/gas/pmc/royal_marine, VENDOR_ITEM_REGULAR),
+
+		list("MISCELLANEOUS", -1, null, null, null),
+		list("Ballistic goggles", round(scale * 10), /obj/item/clothing/glasses/mgoggles, VENDOR_ITEM_REGULAR),
+		list("Prescription ballistic goggles", round(scale * 10), /obj/item/clothing/glasses/mgoggles/prescription, VENDOR_ITEM_REGULAR),
+		list("Firearm Lubricant", round(scale * 15), /obj/item/prop/helmetgarb/gunoil, VENDOR_ITEM_REGULAR),
+		list("TWE Royal Marines Commando patch", round(scale * 15), /obj/item/clothing/accessory/patch/royal_marines, VENDOR_ITEM_REGULAR),
+		list("Bedroll", round(scale * 20), /obj/item/roller/bedroll, VENDOR_ITEM_REGULAR),
+		)
+
+
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/forecon
 	name = "\improper ColMarTech FORECON Uniform Vendor"
 
